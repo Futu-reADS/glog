@@ -1078,3 +1078,7 @@ install (DIRECTORY ${_glog_BINARY_CMake_DATADIR}
 
 install (EXPORT glog-targets NAMESPACE glog:: DESTINATION
   ${_glog_CMake_INSTALLDIR})
+
+# installation for ROS 2
+find_package(ament_cmake_auto REQUIRED)
+ament_auto_package()
